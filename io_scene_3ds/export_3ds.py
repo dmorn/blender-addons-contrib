@@ -1233,7 +1233,7 @@ def save(operator,
 
     for ob in objects:
         # get derived objects
-        free, derived = create_derived_objects(scene, ob)
+        derived = create_derived_objects(scene, ob)
 
         if derived is None:
             continue
