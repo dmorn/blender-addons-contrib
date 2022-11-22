@@ -1286,8 +1286,8 @@ def save(operator,
 
                 # ob_derived_eval.to_mesh_clear()
 
-        if free:
-            # Blender 3.1 does not offer this function.
+        # Blender 3.1 does not offer this function.
+        # if free:
             # free_derived_objects(ob)
 
     # Make material chunks for all materials used in the meshes:
