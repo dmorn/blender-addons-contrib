@@ -1169,7 +1169,7 @@ def save(operator,
          ):
 
     import time
-    from bpy_extras.io_utils import create_derived_objects, free_derived_objects
+    from bpy_extras.io_utils import create_derived_objects
 
     """Save the Blender scene to a 3ds file."""
 
@@ -1287,7 +1287,8 @@ def save(operator,
                 # ob_derived_eval.to_mesh_clear()
 
         if free:
-            free_derived_objects(ob)
+            # Blender 3.1 does not offer this function.
+            # free_derived_objects(ob)
 
     # Make material chunks for all materials used in the meshes:
     for ma_image in materialDict.values():
